@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Product Landing Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Features Section Styles - using Grid */
+        .features {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+            gap: 20px; /* Gap between grid items */
+        }
+
+        .feature {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            margin-bottom: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Optional:  Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .features-grid {
+                grid-template-columns: 1fr; /* Stack features on smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Revolutionary New Product!</h1>
+            <p>Introducing the future of Revolution.</p>
+            <a href="#" class="cta-button">Sign Up Now</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="icon1.png" alt="Feature Icon 1">
+                    <h3>Easy to Use</h3>
+                    <p>Our product is designed with simplicity in mind, ensuring a seamless experience for all users.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon2.png" alt="Feature Icon 2">
+                    <h3>High Performance</h3>
+                    <p>Experience lightning-fast performance that saves you time and boosts productivity.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon3.png" alt="Feature Icon 3">
+                    <h3>Customizable</h3>
+                    <p>Tailor the product to meet your specific needs with a wide range of customization options.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon4.png" alt="Feature Icon 4">
+                    <h3>Secure</h3>
+                    <p>Built with top-notch security features to protect your data and ensure peace of mind.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 levibliss. All rights reserved.</p>
+            <p>Contact: <a href="mailto:info@example.com">info@example.com</a> | Phone: 555-123-4567</p>
+        </div>
+    </footer>
+
+</body>
+</html>
